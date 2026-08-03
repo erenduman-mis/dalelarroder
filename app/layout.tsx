@@ -9,11 +9,21 @@ import './tailwind.css';
 
 export const metadata: Metadata = {
 	title: {
-		template: '%s | Dale Larroder',
-		default: 'Dale Larroder',
+		template: '%s | Eren Duman',
+		default: 'Eren Duman',
 	},
-	description: 'I build things for the web.',
-	metadataBase: new URL('https://dalelarroder.com'),
+	description: 'My corner of the web.',
+	metadataBase: new URL('https://erenduman.dev'),
+
+	openGraph: {
+		title: 'Eren Duman',
+		description: 'My corner of the web.',
+		url: 'https://erenduman.dev',
+		siteName: 'Eren Duman',
+		locale: 'en_US',
+		type: 'website',
+		images: ['/opengraph-image'],
+	},
 };
 
 interface RootLayoutProps {

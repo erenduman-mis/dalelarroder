@@ -20,20 +20,23 @@ export default function Hero() {
 						<h1 className='text-2xl font-medium md:mr-4 md:text-4xl'>
 							Welcome to my corner of the web.
 						</h1>
+
 						<section className='relative z-10'>
 							<p className='text-base text-justify'>
 								I&apos;m Eren Duman — a recent Management Information Systems
 								graduate. I enjoy turning ideas into real, working projects.
-								Whether I'm building software, working with cloud and
+								Whether I&apos;m building software, working with cloud and
 								infrastructure technologies, or exploring something completely
 								new, I enjoy seeing progress and creating something I can be
 								proud of. This portfolio is a collection of that journey.
 							</p>
 						</section>
-						<section className='relative z-10 flex space-x-4 items-center text-sm'>
+
+						<section className='relative z-10 flex items-center space-x-4 text-sm'>
 							<div>
-								<p>More about me: </p>
-								<div className='flex -ml-2'>
+								<p>More about me:</p>
+
+								<div className='-ml-2 flex'>
 									<Link
 										href='https://www.linkedin.com/in/erendumanmis/'
 										target='_blank'
@@ -43,6 +46,7 @@ export default function Hero() {
 									>
 										<LinkedinIcon className='h-9 w-9' />
 									</Link>
+
 									<Link
 										href='https://github.com/erenduman-mis'
 										target='_blank'
@@ -63,7 +67,9 @@ export default function Hero() {
 									</Link>
 								</div>
 							</div>
+
 							<div className='h-14 border-l border-gray-300' />
+
 							<div
 								className='flex flex-wrap space-x-3 space-y-1'
 								data-skip-splash-cursor

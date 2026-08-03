@@ -4,7 +4,7 @@ import useSWR from 'swr';
 import AnimatedBars from './animated-bars';
 import type { NowPlayingSong } from './types';
 
-const fetcher = (url: string): Promise<NowPlayingSong | null> =>
+const fetcher = (url?: string): Promise<NowPlayingSong | null> =>
 	fetch(url).then((res) => res.json());
 
 export default function NowPlaying() {
