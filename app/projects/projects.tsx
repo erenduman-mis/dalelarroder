@@ -1,19 +1,11 @@
 'use client';
 
 import { motion, useReducedMotion } from 'motion/react';
-import { useState } from 'react';
-import useBreakpoint from 'use-breakpoint';
 import { projects } from './constants';
 import ProjectItem from './project-item';
-import ProjectPreview from './project-preview';
-import type { ProjectModal } from './types';
-
-const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 1280 };
 
 export default function Projects() {
 	const prefersReducedMotion = useReducedMotion();
-	const { breakpoint } = useBreakpoint(BREAKPOINTS);
-	const [modal, setModal] = useState<ProjectModal>({ active: false, index: 0 });
 
 	return (
 		<>
@@ -21,28 +13,25 @@ export default function Projects() {
 				<motion.div
 					key={project.title}
 					initial={{
-						scale: prefersReducedMotion ? 1 : 0.8,
+						scale: prefersReducedMotion ? 1 : 0.95,
 						opacity: 0,
-						filter: prefersReducedMotion ? 'blur(0px)' : 'blur(2px)',
 					}}
-					animate={{ scale: 1, opacity: 1, filter: 'blur(0px)' }}
+					animate={{
+						scale: 1,
+						opacity: 1,
+					}}
 					transition={{
-						duration: prefersReducedMotion ? 0.2 : 0.6,
-						delay: prefersReducedMotion ? 0 : index / 10,
+						duration: prefersReducedMotion ? 0.2 : 0.4,
+						delay: prefersReducedMotion ? 0 : index * 0.05,
 					}}
 				>
 					<ProjectItem
-						index={index}
 						title={project.title}
 						url={project.url}
-						role={project.role}
-						setModal={setModal}
+						category={project.category}
 					/>
 				</motion.div>
 			))}
-			{breakpoint === 'desktop' && (
-				<ProjectPreview modal={modal} projects={projects} />
-			)}
 		</>
 	);
 }

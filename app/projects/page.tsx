@@ -4,7 +4,7 @@ import Header from '../components/header';
 
 export const metadata = {
 	title: 'Projects',
-	description: 'My Projects - Dale Larroder',
+	description: 'My Projects - Eren Duman',
 };
 
 export default function Page() {
@@ -13,7 +13,7 @@ export default function Page() {
 			<Header title='Projects' />
 			<div className='space-y-2 md:space-y-5 '>
 				<p className='text-lg leading-7 text-gray-500 dark:text-gray-400'>
-					Here are some of my selected projects worth sharing.
+					Some of the projects I've enjoyed building along the way.
 				</p>
 			</div>
 			<Projects />

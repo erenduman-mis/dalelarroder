@@ -4,7 +4,6 @@ import { merryWeather } from '../../fonts';
 import { AtSignIcon } from '../layouts/icons/at-sign-icon';
 import { GithubIcon } from '../layouts/icons/github-icon';
 import { LinkedinIcon } from '../layouts/icons/linkedin-icon';
-import { XIcon } from '../layouts/icons/x-icon';
 import SplashCursor from '../splash-cursor';
 
 export default function Hero() {
@@ -19,32 +18,16 @@ export default function Hero() {
 				>
 					<div className='absolute top-[20%] md:top-[40%] max-w-5xl flex-col space-y-4 justify-center px-8 md:px-24 lg:ml-14'>
 						<h1 className='text-2xl font-medium md:mr-4 md:text-4xl'>
-							Welcome to my{' '}
-							<span className='font-bold'>personal portfolio — </span> or, as I
-							like to call it, my{' '}
-							<span className='italic border-b border-b-primary-500'>
-								playground
-							</span>{' '}
-							on the web.
+							Welcome to my corner of the web.
 						</h1>
 						<section className='relative z-10'>
 							<p className='text-base text-justify'>
-								I&apos;m Dale Larroder — a Software Engineer and forever a
-								student of the craft. I love building things for the web and am
-								always on the lookout for new challenges and opportunities to
-								learn. I&apos;m passionate about creating beautiful and
-								functional user experiences. Right now, I&apos;m building cool
-								things at{' '}
-								<a
-									href='https://www.aphex.co/'
-									className='underline-magical'
-									target='_blank'
-									rel='noreferrer'
-									data-skip-splash-cursor
-								>
-									Aphex
-								</a>
-								.
+								I&apos;m Eren Duman — a recent Management Information Systems
+								graduate. I enjoy turning ideas into real, working projects.
+								Whether I'm building software, working with cloud and
+								infrastructure technologies, or exploring something completely
+								new, I enjoy seeing progress and creating something I can be
+								proud of. This portfolio is a collection of that journey.
 							</p>
 						</section>
 						<section className='relative z-10 flex space-x-4 items-center text-sm'>
@@ -52,7 +35,7 @@ export default function Hero() {
 								<p>More about me: </p>
 								<div className='flex -ml-2'>
 									<Link
-										href='https://www.linkedin.com/in/dale-larroder/'
+										href='https://www.linkedin.com/in/erendumanmis/'
 										target='_blank'
 										rel='noreferrer'
 										aria-label='linkedin'
@@ -61,7 +44,7 @@ export default function Hero() {
 										<LinkedinIcon className='h-9 w-9' />
 									</Link>
 									<Link
-										href='https://github.com/dlarroder'
+										href='https://github.com/erenduman-mis'
 										target='_blank'
 										rel='noreferrer'
 										aria-label='github'
@@ -69,17 +52,9 @@ export default function Hero() {
 									>
 										<GithubIcon className='h-9 w-9' />
 									</Link>
+
 									<Link
-										href='https://x.com/dalelarroder'
-										target='_blank'
-										rel='noreferrer'
-										aria-label='twitter'
-										data-skip-splash-cursor
-									>
-										<XIcon className='h-9 w-9' />
-									</Link>
-									<Link
-										href='mailto:hi@dalelarroder.com'
+										href='mailto:erenduman889@hotmail.com'
 										aria-label='email'
 										rel='noreferrer'
 										data-skip-splash-cursor
@@ -95,7 +70,6 @@ export default function Hero() {
 							>
 								<Link href='/projects'>/projects</Link>
 								<Link href='/thoughts'>/thoughts</Link>
-								<Link href='/uses'>/uses</Link>
 								<Link href='/stats'>/stats</Link>
 							</div>
 						</section>
