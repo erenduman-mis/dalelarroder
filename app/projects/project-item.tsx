@@ -1,6 +1,6 @@
 interface ProjectProps {
 	title: string;
-	url: string;
+	url?: string;
 	category: string;
 }
 
