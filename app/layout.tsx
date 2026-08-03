@@ -22,7 +22,14 @@ export const metadata: Metadata = {
 		siteName: 'Eren Duman',
 		locale: 'en_US',
 		type: 'website',
-		images: ['/opengraph-image'],
+		images: [
+			{
+				url: '/opengraph-image',
+				width: 1200,
+				height: 630,
+				alt: 'Eren Duman',
+			},
+		],
 	},
 };
 
