@@ -12,8 +12,14 @@ export const metadata: Metadata = {
 		template: '%s | Eren Duman',
 		default: 'Eren Duman',
 	},
+
 	description: 'My corner of the web.',
 	metadataBase: new URL('https://erenduman.dev'),
+
+	icons: {
+		icon: '/favicon.ico',
+		apple: '/apple-touch-icon.png',
+	},
 
 	openGraph: {
 		title: 'Eren Duman',
