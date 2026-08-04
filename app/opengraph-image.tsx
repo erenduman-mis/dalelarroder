@@ -24,19 +24,7 @@ export default function OpengraphImage() {
 				fontFamily: 'Georgia, Cambria, "Times New Roman", Times, serif',
 			}}
 		>
-			{/* Purple blob */}
-			<div
-				style={{
-					position: 'absolute',
-					top: -150,
-					right: -100,
-					width: 560,
-					height: 560,
-					borderRadius: 9999,
-					background:
-						'radial-gradient(circle, rgba(168,85,247,0.95) 0%, rgba(139,92,246,0.45) 45%, rgba(0,0,0,0) 80%)',
-				}}
-			/>
+			<img src='/blob.png' width={430} height={430} alt='' />
 
 			<div
 				style={{
@@ -48,7 +36,6 @@ export default function OpengraphImage() {
 					alignItems: 'flex-start',
 					paddingLeft: 90,
 					paddingRight: 90,
-					marginTop: -10,
 				}}
 			>
 				<div
